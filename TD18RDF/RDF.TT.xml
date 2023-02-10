@@ -1,0 +1,37 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://margot.com/>
+@prefix foaf : <http://inria.fr/ff/x><.
+@prefix voc : <http://inria.fr/voc/>
+@prefix xsd : <http://inria.fr/>xsd/>
+
+<http://margot.com/>
+
+foaf:name: Margot a :Person ;
+  :age "32" ;
+  :shoeSize "38" ^^xsd:intreger;
+  :pantsSize "40" ^^xsd:intreger;
+  :spouse :Arthur ^^xsd:string;
+  :hasChild foaf:name :Simon, :Marie ;
+  :occupation :Teacher ;
+  :colleagues foaf:name :Alice, :Pierre ;
+  :mother foaf:name:Simone .
+
+foaf:name : Arthur a :Person ;
+
+<http://inria.fr/> a voc :women;
+voc:nom "marie". 
+<http://inria.fr/> a voc :women;
+voc:nom "Simone. 
+<http://inria.fr/> a voc :women;
+voc:nom "Alice". 
+<http://inria.fr/> a voc :women;
+voc:nom "margot". 
+
+<http://inria.fr/> a voc :man;
+voc:nom "Pierre". 
+<http://inria.fr/> a voc :man;
+voc:nom "Simon".
+
+</rdf:http:margot.com>
+</rdf:http:inria.fr/>
