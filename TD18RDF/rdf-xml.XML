@@ -1,0 +1,65 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:voc="http://inria.fr/voc/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:m="http://margot.com/">
+
+  <foaf:Person rdf:about="http://margot.com/">
+    <foaf:name>Margot</foaf:name>
+    <m:age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</m:age>
+    <m:shoeSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</m:shoeSize>
+    <m:pantsSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</m:pantsSize>
+    <m:spouse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arthur</m:spouse>
+    <m:hasChild>
+      <foaf:Person>
+        <foaf:name>Simon</foaf:name>
+      </foaf:Person>
+    </m:hasChild>
+    <m:hasChild>
+      <foaf:Person>
+        <foaf:name>Marie</foaf:name>
+      </foaf:Person>
+    </m:hasChild>
+    <m:occupation rdf:resource="http://inria.fr/voc/Teacher"/>
+    <m:colleagues>
+      <foaf:Person>
+        <foaf:name>Alice</foaf:name>
+      </foaf:Person>
+    </m:colleagues>
+    <m:colleagues>
+      <foaf:Person>
+        <foaf:name>Pierre</foaf:name>
+      </foaf:Person>
+    </m:colleagues>
+    <m:mother>
+      <foaf:Person>
+        <foaf:name>Simone</foaf:name>
+      </foaf:Person>
+    </m:mother>
+  </foaf:Person>
+
+  <foaf:Person rdf:about="http://margot.com/Arthur">
+    <foaf:name>Arthur</foaf:name>
+  </foaf:Person>
+
+  <voc:women rdf:about="http://inria.fr/">
+    <voc:nom>Marie</voc:nom>
+  </voc:women>
+  <voc:women rdf:about="http://inria.fr/">
+    <voc:nom>Simone</voc:nom>
+  </voc:women>
+  <voc:women rdf:about="http://inria.fr/">
+    <voc:nom>Alice</voc:nom>
+  </voc:women>
+  <voc:women rdf:about="http://inria.fr/">
+    <voc:nom>Margot</voc:nom>
+  </voc:women>
+
+  <voc:man rdf:about="http://inria.fr/">
+    <voc:nom>Pierre</voc:nom>
+  </voc:man>
+  <voc:man rdf:about="http://inria.fr/">
+    <voc:nom>Simon</voc:nom>
